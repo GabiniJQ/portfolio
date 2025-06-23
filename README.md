@@ -2,6 +2,12 @@
 
 This is my personal portfolio as a **Fullstack Web Developer** focused on building modern, responsive, and accessible web applications using the **MERN Stack** and modern frontend tools.
 
+## 📸 Screenshots
+
+![Portfolio Hero Section](https://imgur.com/wdge6ti)
+
+![Portfolio Projects Section](https://imgur.com/a/mxCfVic)
+
 ## 🚀 Live Demo
 
 🔗 [Visit the Portfolio](https://regal-madeleine-9bce38.netlify.app/)
@@ -28,11 +34,7 @@ This is my personal portfolio as a **Fullstack Web Developer** focused on buildi
 
 This portfolio was designed and built from scratch to reflect my skills as a fullstack developer. It includes both personal and guided projects, and demonstrates clean code organization, component reuse, and responsive design practices.
 
-## 📸 Screenshots
 
-![Portfolio Hero Section](file:///c%3A/Users/Jose/Desktop/Portfoliopng.png)
-
-![Portfolio Projects Section](file:///c%3A/Users/Jose/Desktop/Portfolio2.png)
 
 ## 📂 Getting Started
 
