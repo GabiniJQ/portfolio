@@ -4,9 +4,9 @@ This is my personal portfolio as a **Fullstack Web Developer** focused on buildi
 
 ## 📸 Screenshots
 
-![Portfolio Hero Section](https://imgur.com/wdge6ti)
+![Portfolio Hero Section](./Portfolio2.png)
 
-![Portfolio Projects Section](https://imgur.com/a/mxCfVic)
+![Portfolio Projects Section](./Portfoliopng.png)
 
 ## 🚀 Live Demo
 
