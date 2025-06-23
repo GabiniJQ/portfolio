@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-image: url('/img/bg1080.png'); */
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  background-color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9a7bfc;
+}
+
+:root {
+  --primary: oklch(82.537% 0.1452 214.121);
+  --secondary: oklch(90.365% 0.0001 271.152);
+  --accent: oklch(18.456% 0.06555 272.965);
+  --purple: oklch(74.587% 0.13797 286.798);
+}
+
+/* @media(max-width(1)) */
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-purple: var(--purple);
+}
+
+@utility section-title {
+  @apply my-10 text-4xl font-bold text-center;
+}
+
+@utility nav-blur {
+  @apply bg-cyan-950 md:bg-purple/20 md:backdrop-blur-sm;
+}
+
+@utility btn {
+  @apply px-4 py-2 cursor-pointer rounded-md;
+}
+
+@utility nav-btn {
+  @apply flex items-center gap-2 max-w-fit btn text-white text-xl transition hover:text-primary;
+}
+
+@utility btn-primary {
+  @apply px-4 py-2 cursor-pointer rounded-md flex items-center gap-2 max-w-fit bg-primary text-accent transition hover:-translate-y-1;
+}
+
+@utility btn-outline {
+  @apply px-4 py-2 cursor-pointer rounded-md flex items-center gap-2 max-w-fit outline outline-purple text-purple transition hover:bg-purple/80 hover:text-white hover:-translate-y-1;
+}
+
+@utility bold-primary {
+  @apply font-bold text-primary;
+}
