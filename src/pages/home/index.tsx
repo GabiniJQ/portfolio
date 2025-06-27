@@ -61,7 +61,7 @@ const HomePage = () => {
 
       {/* --------About me section-------- */}
       <SectionObserver sectionId='about'>
-        <div className='flex flex-col gap-6  pb-20' id='about'>
+        <div className='flex flex-col gap-6 pt-10 pb-20' id='about'>
           {/* Separator Header */}
           <SeparatorHeader title='About me' />
 

@@ -31,7 +31,7 @@ const ProjectFeatured = ({
           side === 'left' && 'right-0 left-auto'
         )}
       >
-        <a href='https://wardo.vercel.app' className='z-10 group ' target='_blank' rel='noopener noreferrer'>
+        <a href={links.demo} className='z-10 group ' target='_blank' rel='noopener noreferrer'>
           <img src={imgSrc} alt={title} className='size-full object-cover transition grayscale-100 group-hover:grayscale-0' />
           <div className='absolute top-0 left-0 size-full bg-purple/40 transition group-hover:bg-transparent z-10'></div>
         </a>
