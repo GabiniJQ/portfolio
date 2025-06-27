@@ -61,7 +61,7 @@ const HomePage = () => {
 
       {/* --------About me section-------- */}
       <SectionObserver sectionId='about'>
-        <div className='flex flex-col gap-6  py-20' id='about'>
+        <div className='flex flex-col gap-6  pb-20' id='about'>
           {/* Separator Header */}
           <SeparatorHeader title='About me' />
 
@@ -165,7 +165,9 @@ const HomePage = () => {
           <SeparatorHeader title='Projects' />
 
           <div className='grid gap-6'>
-            {featuredProjects.map((project) => (
+            {featuredProjects.map((project, i) => {
+              const isEven = i % 2 === 0
+              return (
               <ProyectFeatured
                 key={project.title}
                 title={project.title}
@@ -176,8 +178,10 @@ const HomePage = () => {
                 }}
                 description={project.description}
                 techStack={project.techStack}
+                side={isEven ? 'left' : ''}
               />
-            ))}
+            )
+            })}
           </div>
 
           {/* Other projects */}

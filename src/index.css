@@ -14,12 +14,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 8px; 
-  height: 8px; 
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -73,4 +73,8 @@ body {
 
 @utility bold-primary {
   @apply font-bold text-primary;
+}
+
+@utility featured-md {
+  @apply md:block! md:bg-transparent! md:p-0!;
 }
