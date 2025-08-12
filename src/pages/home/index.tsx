@@ -8,6 +8,7 @@ import { motion } from 'motion/react'
 import SectionObserver from '@/pages/home/SectionObserver'
 import { scrollToSection } from '@/shared/utils/scrollToSection'
 import SeparatorHeader from '@/shared/components/SeparatorHeader'
+import SocialsBanner from '@/shared/components/SocialsBanner'
 
 const HomePage = () => {
   return (
@@ -15,7 +16,7 @@ const HomePage = () => {
       {/* -----Hero section-------- */}
       <SectionObserver sectionId='home'>
         <motion.div 
-          className='relative flex flex-col justify-center gap-6 min-h-screen'
+          className='relative flex flex-col justify-center gap-10 min-h-screen 2xl:flex-row 2xl:items-center'
         >
           {/* Hero text*/}
           <motion.div
@@ -83,6 +84,8 @@ const HomePage = () => {
               </button>
             </motion.div>
           </motion.div>
+
+          <SocialsBanner />
         </motion.div>
       </SectionObserver>
 
