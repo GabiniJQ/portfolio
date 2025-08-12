@@ -71,7 +71,7 @@ const ProjectFeatured = ({
         {/* Demo & Github buttons */}
         <div
           className={cn(
-            'flex justify-center gap-2 sm:justify-start md:justify-end',
+            'flex justify-center gap-2 pointer-events-auto sm:justify-start md:justify-end',
             side === 'left' && 'md:justify-start'
           )}
         >

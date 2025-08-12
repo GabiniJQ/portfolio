@@ -14,15 +14,30 @@ const HomePage = () => {
     <div className='flex flex-col' id='home'>
       {/* -----Hero section-------- */}
       <SectionObserver sectionId='home'>
-        <motion.div className='relative flex flex-col justify-center gap-6 min-h-screen '>
+        <motion.div 
+          className='relative flex flex-col justify-center gap-6 min-h-screen'
+        >
           {/* Hero text*/}
-          <motion.div className='flex flex-col gap-4 text-secondary'>
+          <motion.div
+            className='flex flex-col gap-4 text-secondary'
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: true }}
+            variants={{
+              hidden: {},
+              show: {
+                transition: { staggerChildren: 0.1 }
+              }
+            }}
+            transition={{ ease: [0, 0.5, 0.4, 0.5] }}
+            
+          >
             <motion.div
               className='flex flex-col gap-4'
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: 'easeIn' }}
-              style={{ originX: 0 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                show: { opacity: 1, x: 0 },
+              }}
             >
               {/* Title */}
               <p className='text-lg text-secondary'>¡Hola! my name is</p>
@@ -38,23 +53,35 @@ const HomePage = () => {
               </p>
             </motion.div>
 
-            <p className='text-lg  text-secondary max-w-[500px]'>
+            <motion.p
+              className='text-lg  text-secondary max-w-[500px]'
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                show: { opacity: 1, x: 0 },
+              }}
+            >
               I'm a{' '}
               <span className='text-primary'>Fullstack Web Developer</span>{' '}
               focused on building modern web applications with{' '}
               <span className='text-primary'>React</span> on the frontend and{' '}
               <span className='text-primary'>Node.js</span> on the backend.
-            </p>
+            </motion.p>
 
             {/* Navigate to projects */}
-            <div className='flex gap-4 mt-10'>
+            <motion.div
+              className='flex gap-4 mt-10'
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                show: { opacity: 1, x: 0 },
+              }}
+            >
               <button
                 className='btn-outline'
                 onClick={() => scrollToSection('projects')}
               >
                 See what i've built
               </button>
-            </div>
+            </motion.div>
           </motion.div>
         </motion.div>
       </SectionObserver>
@@ -94,13 +121,18 @@ const HomePage = () => {
 
             {/* Photo */}
             <motion.div className='flex items-center justify-center md:w-1/3'>
-              <div className='bg-purple/40 overflow-hidden rounded-md border-1  border-primary max-w-[350px]'>
+              <motion.div
+                className='bg-purple/40 overflow-hidden rounded-md max-w-[350px]'
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true, amount: 0.4 }}
+              >
                 <img
                   src='/img/profile-photo.png'
                   alt='Jose Profile Photo'
                   className='size-full'
                 />
-              </div>
+              </motion.div>
             </motion.div>
           </div>
 
