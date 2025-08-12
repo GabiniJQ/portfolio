@@ -1,7 +1,6 @@
 import { cn } from '@/shared/utils/cn'
 import { scrollToSection } from '@/shared/utils/scrollToSection'
 import { useUIStore } from '@/store/useUIStore'
-import { motion } from 'motion/react'
 import { FaGithub } from 'react-icons/fa'
 import { HiOutlineHome, HiOutlineMail, HiOutlineUser } from 'react-icons/hi'
 import { PiProjectorScreenChartLight } from 'react-icons/pi'
@@ -10,10 +9,8 @@ const NavMenuDesktop = () => {
   const currentSection = useUIStore((state) => state.currentSection)
 
   return (
-    <motion.nav
+    <nav
       className='relative flex items-center z-10 xl:gap-6 '
-      initial={{ scaleY: 0 }}
-      animate={{ scaleY: 1 }}
     >
       <a>
         <button
@@ -70,7 +67,7 @@ const NavMenuDesktop = () => {
           Github
         </button>
       </a>
-    </motion.nav>
+    </nav>
   )
 }
 
