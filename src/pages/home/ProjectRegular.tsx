@@ -20,9 +20,9 @@ const ProjectRegular = ({
   techStack,
 }: ProjectRegularProps) => {
   return (
-    <div className='group flex flex-col size-full min-h-[300px] border border-primary rounded-xl overflow-hidden bg-purple/20 '>
+    <div className='group flex flex-col size-full min-h-[300px] border border-primary overflow-hidden bg-purple/20  rounded md:p-6'>
       {/* Image */}
-      <div className='h-1/2'>
+      <div className='h-1/2 hidden md:block'>
         <img src={imgSrc} alt={title} className='size-full opacity-50 transition group-hover:opacity-100'/>
       </div>
 

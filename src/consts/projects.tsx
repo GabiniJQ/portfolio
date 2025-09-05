@@ -42,22 +42,22 @@ export const featuredProjects = [
     },
   },
   {
-    title: 'Personal Portfolio',
-    imgSrc: '/img/Portfolio.webp',
+    title: 'Searchmantic',
+    imgSrc: '/img/Searchmantic.webp',
     description: (
       <>
-        A <span className='text-primary'>responsive</span> and modern portfolio
-        built with <span className='text-primary'>React</span>, featuring
-        animated transitions using{' '}
-        <span className='text-primary'>Framer Motion</span>, section-based
-        navigation, and a clean, accessible design to showcase my work and
-        skills as a fullstack web developer.
+        A <span className='text-primary'>search engine</span> that combines
+        full-text search with semantic vector search to deliver rich and
+        relevant search results. It features a unified search bar UI that uses
+        both traditional <span className='text-primary'>SQL-based</span> text
+        matching and modern embedding-based similarity using{' '}
+        <span className='text-primary'>vector indexes</span>.
       </>
     ),
-    techStack: ['React', 'TypeScript', 'TailwindCSS', 'Motion'],
+    techStack: ['NextJS', 'DrizzelORM', 'Upstash', 'PostgreSQL'],
     links: {
-      github: 'https://github.com/GabiniJQ/gym-app-typescript',
-      demo: 'https://gym-app-typescript-j9i.pages.dev/',
+      github: 'https://github.com/GabiniJQ/Searchmantic',
+      demo: 'https://searchmantic.vercel.app/',
     },
   },
 ]
