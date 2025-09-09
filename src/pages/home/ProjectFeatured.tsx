@@ -27,7 +27,7 @@ const ProjectFeatured = ({
       {/* Image */}
       <div
         className={cn(
-          'absolute top-0 left-0 size-full opacity-10 -z-10 transition md:rounded-xl overflow-hidden md:inline-block md:opacity-60 md:z-0 md:w-auto md:max-h-2/3 md:top-1/2 md:-translate-y-1/2',
+          'absolute top-0 left-0 size-full opacity-10 -z-10 transition md:rounded-xl overflow-hidden md:inline-block md:opacity-60 md:z-0 md:w-1/2 md:max-h-2/3 md:top-1/2 md:-translate-y-1/2',
           side === 'left' && 'right-0 left-auto'
         )}
       >
