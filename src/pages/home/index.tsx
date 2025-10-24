@@ -131,7 +131,7 @@ const HomePage = () => {
                 viewport={{ once: true, amount: 0.4 }}
               >
                 <img
-                  src='/img/profile-photo.png'
+                  src='/img/profile-pic.webp'
                   alt='Jose Profile Photo'
                   className='size-full'
                 />
