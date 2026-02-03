@@ -25,20 +25,21 @@ export const featuredProjects = [
     },
   },
   {
-    title: 'Evogym Landing Page',
-    imgSrc: '/img/Evogym.webp',
+    title: 'PetCare Landing Page',
+    imgSrc: '/img/Petcare.webp',
     description: (
       <>
-        <span className='text-primary'>Landing website</span> for a gym.
-        Features the use of Framer Motion for{' '}
+        Modern <span className='text-primary'>landing website</span> for a an
+        application that connects pet owners with trusted caregivers. Features
+        the use of Framer Motion for{' '}
         <span className='text-primary'>smooth animations</span> and a responsive
         layout.
       </>
     ),
     techStack: ['React', 'TypeScript', 'TailwindCSS', 'Motion'],
     links: {
-      github: 'https://github.com/GabiniJQ/gym-app-typescript',
-      demo: 'https://gym-app-typescript-j9i.pages.dev/',
+      github: 'https://github.com/GabiniJQ/petcare',
+      demo: 'https://petcare-six-kohl.vercel.app/',
     },
   },
   {
@@ -81,18 +82,20 @@ export const moreProjects = [
     },
   },
   {
-    title: 'Chef Claude',
-    imgSrc: '/img/Chef.webp',
+    title: 'Evogym Landing Page',
+    imgSrc: '/img/Evogym.webp',
     description: (
       <>
-        A kitchen <span className='text-primary'>AI assistant</span> that helps
-        you choose a recipe according to your cooking ingredients.
+        <span className='text-primary'>Landing website</span> for a gym.
+        Features the use of Framer Motion for{' '}
+        <span className='text-primary'>smooth animations</span> and a responsive
+        layout.
       </>
     ),
-    techStack: ['React', 'CSS', 'HTML'],
+    techStack: ['React', 'TypeScript', 'TailwindCSS', 'Motion'],
     links: {
-      github: 'https://github.com/GabiniJQ/Chef-Claude',
-      demo: 'https://chef-claude.pages.dev/',
+      github: 'https://github.com/GabiniJQ/gym-app-typescript',
+      demo: 'https://gym-app-typescript-j9i.pages.dev/',
     },
   },
 ]
